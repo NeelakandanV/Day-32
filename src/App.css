@@ -2,37 +2,267 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.LoginCont{
+  margin: 10px;
+  padding: 10px;
+  height: 100vh;
+  background-color: rgb(175, 151, 198);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.LoginFormCont{
+  margin: 10px;
+  padding: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
+.LoginForm Button{
+  margin: 10px;
+  padding: 5px;
+}
+
+.baseParent{
+  margin: 2px;
+  border: 1px solid rgb(248, 232, 203);
+  padding: 2px;
   min-height: 100vh;
+  max-height: fit-content;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: darkslategray;
+}
+
+.Title{
+  text-decoration-line: underline;
+  color: rgb(231, 252, 252);
+}
+
+.PageTitle{
+  font-size: xx-large;
+  font-weight: 500;
+  color: darkblue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.NavBars{
+  margin: 2px;
+}
+
+
+.Content{
+  margin: 5px;
+  padding: 2px;
+  color: whitesmoke;
+}
+
+.footer{
+  margin: 2px;
+  bottom: 0;
+  border-top: 2px solid beige;
+  padding: 3px;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.HomeParent{
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 70%;
+  max-height: max-content;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.UserCont{  
+  height: 400px;
+  width: 300px;
+  border: 2px solid black;
+  margin: 3px;
+  padding: 4px;
+  background-color: white;
+  color: black;
+}
+
+
+.UserCont img{
+  height:250px;
+  width: 70%;
+  padding: 10px;
+}
+
+.BookCont{
+  height: 400px;
+  width: 300px;
+  border: 2px solid black;
+  margin: 3px;
+  padding: 4px;
+  background-color: white;
+  color: black;
+}
+
+.BookCont img{
+  height:250px;
+  width: 70%;
+  padding: 10px;
+}
+
+.view-btn{
+  border-radius: 50%;
+}
+
+.view-btn:hover{
+  background-color: dodgerblue;
+  color: white;
+}
+
+.edit-btn{
+  border-radius: 50%;
+}
+
+.edit-btn:hover{
+  background-color: darkgreen;
+  color: darkgray;
+}
+
+.delete-btn:hover{
+  background-color: crimson;
+}
+
+.UserReadCont{
+  margin: 3px;
+}
+
+.UserPagiCont{
+  padding: 5px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.UserPagiCont a:hover{
+  cursor: pointer;
+  background-color: blue;
+  color: whitesmoke;
+}
+
+.Pagination{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Pagination a{
+  border: 1px solid black;
+  padding:8px;
+  background-color: aqua;
+  color: black;
+}
+
+.CreateForm{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.FormCont{
+  margin: 15px ;
+  padding: 10px;
+  border: 2px solid aliceblue;
+  height: auto;
+  background-color: aliceblue;
+  color: black; 
+}
+
+.view-mainCon{
+  display: flex;
+  justify-content: space-around;
+}
+
+.view-user{
+  margin: 3px;
+  padding: 5px;
+  background-color: rgb(149, 194, 177);
+  color: black;
+  height: auto;
+  width: fit-content;
+  text-align: left;
+}
+
+.BookCardCont{
+  margin: 20px;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.BookBoxCont{
+  height: 400px;
+  width: 300px;
+  margin: 3px;
+  padding: 4px;
+  color: black;
+}
+
+.BookBoxCont button{
+  margin: 3px;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.BookTitle{
+  font-weight: 600;
+  font-size: x-large;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Crebtn{
+  margin: 10px;
+  text-align: right;
+}
+
+.view-btn-Bk{
+  border-radius: 50%;
+}
+
+.view-btn-Bk:hover{
+  background-color: dodgerblue;
+  color: white;
+}
+
+.edit-btn-Bk{
+  border-radius: 50%;
+}
+
+.edit-btn-Bk:hover{
+  background-color: darkgreen;
+  color: darkgray;
+}
+
+.delete-btn-Bk{
+  border-radius: 50%;
+}
+
+.delete-btn-Bk:hover{
+  background-color: crimson;
+}
+
+.NoPage{
+  margin: 2px;
+  padding: 3px;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.NoPage img{
+  margin: 5px;
+  height: 300px;
+  width: fit-content;
 }
