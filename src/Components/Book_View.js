@@ -28,7 +28,7 @@ export default function BookViewComp(){
                     <p>Updated at : {Bk.CreatedAt}</p>
                     <div className="view-stu-btn">
                         <Button onClick={()=>history.push("/Home")}><FontAwesomeIcon icon={faHouse} />{" "}Home</Button>{' '}
-                        <Button onClick={()=>history.push("/Books")}><FontAwesomeIcon icon={faBook} />{" "}Users Data</Button>{' '}
+                        <Button onClick={()=>history.push("/Books")}><FontAwesomeIcon icon={faBook} />{" "}Book Data</Button>{' '}
                         <Button onClick={()=>history.push(`/Edit-Book/${id}`)}><FontAwesomeIcon icon={faPenToSquare} size="xl" style={{color: "#ededee",}} />{" "}Edit</Button>
                     </div>
                 </div>
